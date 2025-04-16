@@ -12,8 +12,8 @@ export const RevealOnScroll = ({ children }) => {
         }
       },
       { 
-        threshold: 0.1,
-        rootMargin: "10px" 
+        threshold: 0.2,
+        rootMargin: "50px" 
       }
     );
 
@@ -30,7 +30,7 @@ export const RevealOnScroll = ({ children }) => {
   }, []);
 
   return (
-    <div ref={ref} className="reveal">
+    <div ref={ref} className="reveal opacity-0 translate-y-4 transition-all duration-700 ease-out">
       {children}
     </div>
   );
