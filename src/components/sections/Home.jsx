@@ -11,7 +11,7 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           <div className="flex flex-col items-center justify-center">
-            <div className="w-[300px] h-[300px]">
+            <div className="w-[300px] h-[300px] mt-16 -mb-32">
               <Loader />
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
