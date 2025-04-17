@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { GlowingEffect } from "../ui/glowing-effect";
 
 export const About = () => {
   const frontendSkills = [
@@ -101,7 +102,14 @@ export const About = () => {
           </h2>
 
           {/* Skills Section */}
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all mb-8">
+          <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all mb-8">
+            <GlowingEffect
+              spread={40}
+              glow={true}
+              disabled={false}
+              proximity={64}
+              inactiveZone={0.01}
+            />
             <p className="text-gray-300 mb-6">
               Computer Science graduate with expertise in Full Stack Development and AI/ML. 
               Passionate about creating innovative web applications and exploring cutting-edge technologies 
@@ -109,7 +117,14 @@ export const About = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+              <div className="relative rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+                <GlowingEffect
+                  spread={40}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                />
                 <h3 className="text-xl font-bold mb-4 text-blue-400">Front End</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
@@ -124,7 +139,14 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+              <div className="relative rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+                <GlowingEffect
+                  spread={40}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                />
                 <h3 className="text-xl font-bold mb-4 text-blue-400">Back End</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, key) => (
@@ -139,7 +161,14 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+              <div className="relative rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+                <GlowingEffect
+                  spread={40}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                />
                 <h3 className="text-xl font-bold mb-4 text-blue-400">Machine Learning</h3>
                 <div className="flex flex-wrap gap-2">
                   {mlSkills.map((tech, key) => (
@@ -154,7 +183,14 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+              <div className="relative rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
+                <GlowingEffect
+                  spread={40}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                />
                 <h3 className="text-xl font-bold mb-4 text-blue-400">Other Tools</h3>
                 <div className="flex flex-wrap gap-2">
                   {otherTools.map((tech, key) => (
@@ -172,7 +208,14 @@ export const About = () => {
           </div>
 
           {/* Education Section */}
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all mb-8">
+          <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all mb-8">
+            <GlowingEffect
+              spread={40}
+              glow={true}
+              disabled={false}
+              proximity={64}
+              inactiveZone={0.01}
+            />
             <h3 className="text-2xl font-bold mb-6 text-blue-400">Education</h3>
             <div className="space-y-4">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
@@ -201,7 +244,14 @@ export const About = () => {
           </div>
 
           {/* Experience Section */}
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
+          <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
+            <GlowingEffect
+              spread={40}
+              glow={true}
+              disabled={false}
+              proximity={64}
+              inactiveZone={0.01}
+            />
             <h3 className="text-2xl font-bold mb-6 text-blue-400">Experience</h3>
             <div className="space-y-8">
               {experiences.map((exp, index) => (
