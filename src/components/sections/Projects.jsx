@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { useState } from "react";
+import { CardContainer, CardBody, CardItem } from "../ui/3d-card";
 import vitainImage from "../../assets/images/website-10.png";
 import flourishImage from "../../assets/images/website-9.png";
 import ninegenImage from "../../assets/images/website-11.png";
@@ -25,7 +26,7 @@ export const Projects = () => {
     { id: "web", name: "Web Development" },
     { id: "ml", name: "Machine Learning" },
     { id: "mobile", name: "Mobile Apps" },
-    { id: "security", name: "Cybersecurity" }
+    // { id: "security", name: "Cybersecurity" }
   ];
 
   const projects = [
@@ -182,15 +183,29 @@ export const Projects = () => {
 
   const ProjectCard = ({ project }) => (
     <div className="flex flex-col lg:flex-row gap-8 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all p-6 bg-[#0a0a0a]/50">
-      {/* Project Image */}
+      {/* Project Image with 3D Effect */}
       <div className="lg:w-1/2">
-        <div className="relative aspect-[16/9] rounded-lg overflow-hidden">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            className="object-cover w-full h-full"
-          />
-        </div>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl border">
+            <CardItem
+              translateZ="100"
+              className="w-full"
+            >
+              <a 
+                href={project.demoLink !== "#" ? project.demoLink : project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full"
+              >
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl cursor-pointer"
+                />
+              </a>
+            </CardItem>
+          </CardBody>
+        </CardContainer>
       </div>
 
       {/* Project Details */}

@@ -14,7 +14,7 @@ export const Home = () => {
             <div className="w-[300px] h-[300px] mt-16 -mb-32">
               <Loader />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right font-['Zilla_Slab']">
               Hi, I'm Sarwar Nazrul
             </h1>
           </div>
