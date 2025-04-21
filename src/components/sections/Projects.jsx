@@ -15,7 +15,8 @@ import midokImage from "../../assets/images/website-12.png";
 import heartDiseaseImage from "../../assets/images/heart.png";
 import carInfoImage from "../../assets/images/carinfo.png";
 import housePriceImage from "../../assets/images/house.png";
-import carPriceImage from "../../assets/images/car.png";  
+import carPriceImage from "../../assets/images/car.png";
+import expenseWiseImage from "../../assets/images/expensewise.png";
 
 export const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -30,6 +31,15 @@ export const Projects = () => {
   ];
 
   const projects = [
+    {
+      title: "ExpenseWise - Free Budget Management Tool",
+      description: "A revolutionary free budgeting tool that stands out in a market dominated by paid solutions. Unlike other tools that charge fees or lock features behind paywalls, ExpenseWise provides comprehensive budget management completely free. The platform features an intuitive interface for tracking earnings and expenses, with secure user authentication and real-time data management. Built with a focus on user experience, it makes personal finance management accessible to everyone without any hidden costs.",
+      technologies: ["React.js", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication", "RESTful API", "Responsive Design"],
+      category: "web",
+      image: expenseWiseImage,
+      demoLink: "https://getexpensewise.vercel.app/",
+      githubLink: "https://github.com/Sarwarnazrul242/ExpenseWise"
+    },
     {
       title: "9thgen.ai - AI Voice Technology Platform",
       description: "Joined a startup focused on revolutionizing business communication through AI voice technology. As a frontend developer, I contributed to building a modern web platform that makes AI-powered customer service calls accessible and efficient. The platform enables businesses to automate communication while maintaining a human-centric approach.",

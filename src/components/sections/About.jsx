@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { GlowingEffect } from "../ui/glowing-effect";
+import sarwarImage from "../../assets/images/sarwar.png";  
 
 export const About = () => {
   const frontendSkills = [
@@ -110,11 +111,23 @@ export const About = () => {
               proximity={64}
               inactiveZone={0.01}
             />
-            <p className="text-gray-300 mb-6">
-              Computer Science graduate with expertise in Full Stack Development and AI/ML. 
-              Passionate about creating innovative web applications and exploring cutting-edge technologies 
-              in machine learning and deep learning.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="flex-1">
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  Computer Science graduate with expertise in Full Stack Development and AI/ML. 
+                  Passionate about creating innovative web applications and exploring cutting-edge technologies 
+                  in machine learning and deep learning.
+                </p>
+              </div>
+              <div className="flex-1 flex justify-center relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <img 
+                  src={sarwarImage} 
+                  alt="Sarwar" 
+                  className="rounded-full w-56 h-56 object-contain bg-gray-900/50 p-1 border-4 border-blue-500/20 shadow-lg hover:border-blue-500/40 transition-all duration-300 relative z-10 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
+                />
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
