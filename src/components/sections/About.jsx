@@ -48,9 +48,9 @@ export const About = () => {
       location: "Detroit, Michigan",
       description: "Focused on neural network implementation and heart disease classification research.",
       achievements: [
-        "Designed and implemented neural networks using CNN and LSTM models to classify heart disease",
-        "Developed a fusion model combining multi-modal data inputs to enhance classification accuracy",
-        "Reviewed and synthesized insights from over 30 research papers to integrate cutting-edge methodologies"
+        "Built CNN, LSTM and Transformer models for heart disease classification, achieving 92% accuracy through advanced data preprocessing and augmentation",
+        "Benchmarked deep learning models on the MIMIC-IV dataset, publishing findings at the IEEE CBMS 2025 Conference",
+        "Synthesized insights from 30+ research papers to integrate state-of-the-art techniques into model development"
       ]
     },
     {
@@ -66,15 +66,15 @@ export const About = () => {
       ]
     },
     {
-      title: "Frontend Developer / Cyber Security Intern",
+      title: "Frontend Developer",
       company: "Griffiss Institute (DoD/Air Force/HNCO)",
       period: "Jun 2024 - Aug 2024",
       location: "San Antonio, Texas",
       description: "Combined frontend development with cybersecurity implementation.",
       achievements: [
-        "Developed an Angular web application, improving user engagement and performance",
-        "Improved network security through vulnerability assessments and Nessus scans",
-        "Configured and optimized IP settings, ensuring seamless network communication"
+        "Built a responsive Angular app with reusable components for improved desktop and mobile user experience",
+        "Collaborated with UX/UI teams to design accessible and intuitive interfaces, enhancing data accessibility and enabling faster decision-making for improved productivity",
+        "Integrated RESTful APIs for real-time data updates, enhancing performance and frontend functionality"
       ]
     },
     {
@@ -84,9 +84,9 @@ export const About = () => {
       location: "Rome, New York",
       description: "Focused on IoT security and network analysis.",
       achievements: [
-        "Enhanced IoT device security by 20% through cryptographic analysis and reverse engineering",
-        "Reduced potential security breaches by 25% through network traffic analysis",
-        "Achieved 30% improvement in offensive and defensive cybersecurity techniques through Core Cyber and EMSO operations"
+        "Reverse-engineered IoT devices to uncover cryptographic vulnerabilities and strengthen embedded security",
+        "Analyzed network traffic to identify and remediate weak points, improving system resilience against cyber threats",
+        "Developed hands-on skills in Core Cyber and EMSO operations, supporting both offensive and defensive cybersecurity initiatives"
       ]
     }
   ];
@@ -235,7 +235,7 @@ export const About = () => {
                 <div>
                   <h4 className="text-xl font-semibold">University of Detroit Mercy</h4>
                   <p className="text-gray-400">B.S. in Computer Science</p>
-                  <p className="text-blue-500">GPA: 3.62/4.00</p>
+                  <p className="text-blue-500">GPA: 3.6/4.0</p>
                 </div>
                 <div className="text-right mt-2 md:mt-0">
                   <p className="text-gray-400">Detroit, Michigan</p>
