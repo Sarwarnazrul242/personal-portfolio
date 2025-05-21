@@ -64,7 +64,7 @@ export const Projects = () => {
       technologies: ["React.js", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication", "Role-Based Access Control", "RESTful API"],
       category: "web",
       image: udmBookingImage,
-      demoLink: "https://detroit-mercy-room-booking-system.vercel.app/",
+      demoLink: "https://umdroom.vercel.app/",
       githubLink: "https://github.com/Sarwarnazrul242/Detroit-Mercy-Room-Booking-System"
     },
     {

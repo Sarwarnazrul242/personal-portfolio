@@ -26,7 +26,7 @@ export const Home = () => {
             </div>
             <div className="flex items-center space-x-2 text-gray-400 mb-3">
               <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-              <span>AI & Deep Learning Researcher</span>
+              <span>AI Researcher</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-400">
               <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
