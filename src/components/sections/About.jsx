@@ -115,7 +115,7 @@ export const About = () => {
               <div className="flex-1">
                 <p className="text-gray-300 text-lg leading-relaxed">
                   Computer Science graduate with expertise in Full Stack Development and AI/ML. 
-                  Passionate about creating innovative web applications and exploring cutting-edge technologies 
+                  Passionate about creating innovative software applications and exploring cutting-edge technologies 
                   in machine learning and deep learning.
                 </p>
               </div>
@@ -221,7 +221,7 @@ export const About = () => {
           </div>
 
           {/* Education Section */}
-          <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all mb-8">
+          {/* <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all mb-8">
             <GlowingEffect
               spread={40}
               glow={true}
@@ -254,10 +254,10 @@ export const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Experience Section */}
-          <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
+          {/* <div className="relative rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
             <GlowingEffect
               spread={40}
               glow={true}
@@ -290,7 +290,7 @@ export const About = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </RevealOnScroll>
     </section>
