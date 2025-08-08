@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { GlowingEffect } from "../ui/glowing-effect";
-import sarwarImage from "../../assets/images/sarwar.png";  
+import sarwarImage from "../../assets/images/test.png";  
 
 export const About = () => {
   const frontendSkills = [
@@ -124,7 +124,7 @@ export const About = () => {
                 <img 
                   src={sarwarImage} 
                   alt="Sarwar" 
-                  className="rounded-full w-56 h-56 object-contain bg-gray-900/50 p-1 border-4 border-blue-500/20 shadow-lg hover:border-blue-500/40 transition-all duration-300 relative z-10 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
+                  className="rounded-full w-56 h-56 object-cover object-center bg-gray-900/50 p-1 border-4 border-blue-500/20 shadow-lg hover:border-blue-500/40 transition-all duration-300 relative z-10 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
                 />
               </div>
             </div>

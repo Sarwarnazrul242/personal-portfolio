@@ -1,0 +1,9 @@
+/* LightRays container should size to its parent; use with absolute positioning when needed */
+.light-rays-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+} 

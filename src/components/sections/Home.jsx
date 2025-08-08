@@ -1,17 +1,33 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { TextHoverEffect } from "../ui/TextHoverEffect";
 import Loader from "../ui/Loader";
+import LightRays from "../ui/LightRays";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative group"
     >
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
+        {/* Light Rays Background */}
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#00ffff"
+          raysSpeed={1.5}
+          lightSpread={0.8}
+          rayLength={1.2}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="custom-rays"
+        />
+        <div className="text-center z-10 px-4 relative">
           <div className="flex flex-col items-center justify-center">
-            <div className="w-[300px] h-[300px] mt-16 -mb-32">
+            
+            <div className="w-[300px] h-[300px] mt-16 -mb-32 relative" style={{ zIndex: 1 }}>
+
               <Loader />
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right font-['Zilla_Slab']">
@@ -22,11 +38,11 @@ export const Home = () => {
           <div className="flex flex-col items-center mb-8 text-xl">
             <div className="flex items-center space-x-2 text-gray-400 mb-3">
               <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-              <span>Full Stack Web Developer</span>
+              <span>Software Developer</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-400 mb-3">
               <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-              <span>AI Researcher</span>
+              <span>ML Engineer</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-400">
               <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
@@ -52,10 +68,7 @@ export const Home = () => {
               </a>
             </div>
 
-            {/* Text Hover Effect */}
-            <div className="w-full max-w-2xl h-32">
-              <TextHoverEffect text="SARWAR.DEV" duration={0.3} />
-            </div>
+
           </div>
         </div>
       </RevealOnScroll>

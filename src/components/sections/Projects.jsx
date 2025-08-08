@@ -41,6 +41,25 @@ export const Projects = () => {
       githubLink: "https://github.com/Sarwarnazrul242/ExpenseWise"
     },
     {
+      title: "Vitain - AI-Powered Supplement Recommendation",
+      description: "A startup initiative with classmates to revolutionize healthcare through AI. Currently developing a web platform and mobile app with custom-trained AI models for personalized supplement recommendations. Work in progress.",
+      technologies: ["Vue.js", "JavaScript", "Tailwind CSS", "Node.js", "ChatGPT API", "MongoDB", "Spline", "Python", "Vercel", "Figma"],
+      category: "web",
+      image: vitainImage,
+      demoLink: "https://vitain.vercel.app/",
+      githubLink: "#"
+    },
+    {
+      title: "Heart Disease Classification Model",
+      description: "Deep learning research project achieving 92% accuracy in heart disease classification using CNN and LSTM models. Implemented data preprocessing and augmentation techniques for improved performance.",
+      technologies: ["Python", "TensorFlow", "CNN", "LSTM", "Data Preprocessing"],
+      category: "ml",
+      image: heartDiseaseImage,
+      demoLink: "#",
+      githubLink: "https://github.com/MIMIC-Benchmarking",
+      paperLink: "https://ieeexplore.ieee.org/document/11058819"
+    },
+    {
       title: "9thgen.ai - AI Voice Technology Platform",
       description: "Joined a startup focused on revolutionizing business communication through AI voice technology. As a frontend developer, I contributed to building a modern web platform that makes AI-powered customer service calls accessible and efficient. The platform enables businesses to automate communication while maintaining a human-centric approach.",
       technologies: ["Vue.js", "JavaScript", "Tailwind CSS", "Vite", "REST APIs", "WebRTC", "Responsive Design", "UI/UX Design"],
@@ -68,15 +87,6 @@ export const Projects = () => {
       githubLink: "https://github.com/Sarwarnazrul242/Detroit-Mercy-Room-Booking-System"
     },
     {
-      title: "Vitain - AI-Powered Supplement Recommendation",
-      description: "A startup initiative with classmates to revolutionize healthcare through AI. Currently developing a web platform and mobile app with custom-trained AI models for personalized supplement recommendations. Work in progress.",
-      technologies: ["Vue.js", "JavaScript", "Tailwind CSS", "Node.js", "ChatGPT API", "MongoDB", "Spline", "Python", "Vercel", "Figma"],
-      category: "web",
-      image: vitainImage,
-      demoLink: "https://vitain.vercel.app/",
-      githubLink: "#"
-    },
-    {
       title: "Flourish - Healthcare Journey Tracker",
       description: "I built the frontend for this healthcare platform for a Canadian company. It helps doctors get actionable insights from patient-reported data through daily health tracking and AI-powered analysis.",
       technologies: ["React.js", "Tailwind CSS", "Framer Motion", "JavaScript", "Responsive Design", "UI/UX Design"],
@@ -93,15 +103,6 @@ export const Projects = () => {
       image: midokImage,
       demoLink: "#",
       githubLink: "https://github.com/Osestic/MiDOK_Co-Pilot_App"
-    },
-    {
-      title: "Heart Disease Classification Model",
-      description: "Deep learning research project achieving 92% accuracy in heart disease classification using CNN and LSTM models. Implemented data preprocessing and augmentation techniques for improved performance.",
-      technologies: ["Python", "TensorFlow", "CNN", "LSTM", "Data Preprocessing"],
-      category: "ml",
-      image: heartDiseaseImage,
-      demoLink: "#",
-      githubLink: "https://github.com/MIMIC-Benchmarking"
     },
     {
       title: "CarInformation - Android Car Info App",
@@ -252,6 +253,16 @@ export const Projects = () => {
             >
               View Demo
               <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          )}
+          {(project.title === "Heart Disease Classification Model") && (
+            <a
+              href={project.paperLink || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 border border-emerald-500 text-emerald-400 rounded-full hover:bg-emerald-500/10 transition-colors"
+            >
+              Published Paper
             </a>
           )}
           <a
